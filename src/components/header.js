@@ -28,6 +28,21 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+
+    <div>
+      <h3>
+        <Link
+          to="/page-2"
+          style={{
+            color: `white`,
+            textDecoration: `none`,
+          }}
+        >
+          Archives
+        </Link>
+      </h3>
+      <h3>About</h3>
+    </div>
   </header>
 )
 
