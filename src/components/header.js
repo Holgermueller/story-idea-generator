@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { Typography } from "@material-ui/core"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -18,19 +19,20 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `#1f2833`,
-            textDecoration: `none`,
-            fontStyle: `oblique`,
-            fontWeight: `bolder`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <Typography variant="h1" fontWeight="fontWeightBold">
+        <div style={{ margin: 0 }}>
+          <Link
+            to="/"
+            style={{
+              color: `#1f2833`,
+              textDecoration: `none`,
+              fontStyle: `oblique`,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </div>
+      </Typography>
     </div>
   </header>
 )
