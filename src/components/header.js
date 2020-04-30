@@ -1,7 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Typography } from "@material-ui/core"
+import { Typography, Box } from "@material-ui/core"
+import { typography } from "@material-ui/system"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -19,19 +20,21 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <Typography variant="h1" fontWeight="fontWeightBold">
-        <div style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `#1f2833`,
-              textDecoration: `none`,
-              fontStyle: `oblique`,
-            }}
-          >
-            {siteTitle}
-          </Link>
-        </div>
+      <Typography variant="h3">
+        <Box fontWeight="fontWeightBold">
+          <div style={{ margin: 0 }}>
+            <Link
+              to="/"
+              style={{
+                color: `#1f2833`,
+                textDecoration: `none`,
+                fontStyle: `oblique`,
+              }}
+            >
+              {siteTitle}
+            </Link>
+          </div>
+        </Box>
       </Typography>
     </div>
   </header>
