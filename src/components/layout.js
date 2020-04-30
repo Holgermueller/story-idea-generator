@@ -39,7 +39,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{ fontFamily: `sans-serif` }}>
+        <footer style={{ fontFamily: `sans-serif`, marginTop: `15px` }}>
           © {new Date().getFullYear()}, Holger Mueller | Built with
           {` `}
           <a
