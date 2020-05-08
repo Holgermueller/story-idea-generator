@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Typography, Box } from "@material-ui/core"
-import { typography } from "@material-ui/system"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -18,6 +17,7 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        display: `flex`,
       }}
     >
       <Typography variant="h3">

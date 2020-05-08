@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Menu from "./menu"
+import Connect from "./connect"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -40,7 +41,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer style={{ fontFamily: `sans-serif`, marginTop: `15px` }}>
-          © {new Date().getFullYear()}, Holger Mueller | Built with
+          © {new Date().getFullYear()} | Holger Mueller | Built with
           {` `}
           <a
             style={{ textDecoration: `none`, color: `#45a29e` }}
@@ -50,6 +51,7 @@ const Layout = ({ children }) => {
           </a>
         </footer>
       </div>
+      <Connect />
     </>
   )
 }
