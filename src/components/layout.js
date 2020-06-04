@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Menu from "./menu"
 import Connect from "./connect"
 import "./layout.css"
 
@@ -31,7 +30,7 @@ const Layout = ({ children }) => {
         style={{ position: `fixed` }}
         siteTitle={data.site.siteMetadata.title}
       />
-      <Menu />
+
       <div
         style={{
           margin: `0 auto`,
@@ -40,6 +39,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+
         <footer style={{ fontFamily: `sans-serif`, marginTop: `15px` }}>
           © {new Date().getFullYear()} | Holger Mueller | Built with
           {` `}

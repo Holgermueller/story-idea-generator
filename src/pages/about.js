@@ -1,12 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Link } from "gatsby"
 
 const AboutPage = () => (
   <Layout>
     <SEO title="AboutPage" />
     <h1 style={{ fontStyle: `oblique` }}>MeanStreak,</h1>
-    <h2 style={{ padding: `0` }}>A Life</h2>
+
+    <Link to="/">
+      <h2 style={{ padding: `0` }}>Back</h2>
+    </Link>
+
     <div
       style={{
         background: `#c5c6c7`,
