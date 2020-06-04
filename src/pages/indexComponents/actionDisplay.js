@@ -1,13 +1,13 @@
 import React from "react"
 import { Card, CardContent, CardActions } from "@material-ui/core"
 
-const ProtagDisplay = () => (
+const ActionDisplay = () => (
   <Card>
     <CardContent>
-      <h1>Protag</h1>
+      <h1>Action</h1>
     </CardContent>
     <CardActions>Button</CardActions>
   </Card>
 )
 
-export default ProtagDisplay
+export default ActionDisplay
