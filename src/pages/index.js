@@ -14,7 +14,11 @@ const IndexPage = () => (
     <SEO title="Home" />
     <h1 style={{ fontStyle: `italic` }}>Get your story started!</h1>
 
-    <Link to="/about" style={{ color: `black`, textDecoration: `none` }}>
+    <Link
+      to="/about"
+      style={{ color: `black`, textDecoration: `none` }}
+      aria-label="Find out how this app works"
+    >
       <h3 style={{ fontFamily: `sans-serif` }}>
         How it works <AiOutlineArrowRight />
       </h3>
@@ -28,15 +32,14 @@ const IndexPage = () => (
         justify="center"
         alignItems="center"
         alignContent="center"
-        spacing={5}
       >
-        <Grid item>
+        <Grid item style={{ marginLeft: "auto", marginRight: "auto" }}>
           <ProtagDisplay />
         </Grid>
-        <Grid item>
+        <Grid item style={{ marginLeft: "auto", marginRight: "auto" }}>
           <ActionDisplay />
         </Grid>
-        <Grid item>
+        <Grid item style={{ marginLeft: "auto", marginRight: "auto" }}>
           <RandomWordDisplay />
         </Grid>
       </Grid>
