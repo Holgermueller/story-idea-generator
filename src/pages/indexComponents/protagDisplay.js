@@ -30,14 +30,17 @@ export default class ProtagDisplay extends Component {
     return (
       <Card>
         <CardContent>
-          <h1
-            style={{ textAlign: "center" }}
-            name="chosenProtag"
-            id="protagDisplay"
-            value={this.state.chosenProtag}
-          >
-            {this.state.chosenProtag}
-          </h1>
+          {this.state.chosenProtag ? (
+            <h1
+              style={{ textAlign: "center" }}
+              name="chosenProtag"
+              id="protagDisplay"
+            >
+              {this.state.chosenProtag}
+            </h1>
+          ) : (
+            <h1>Protagonist</h1>
+          )}
         </CardContent>
         <CardActions>
           <Button
