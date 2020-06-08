@@ -16,7 +16,7 @@ export default class ActionDisplay extends Component {
       Math.floor(Math.random() * this.state.actionList.length)
     ]
 
-    this.setState({ chooseAction: actionChosenFromList })
+    this.setState({ chosenAction: actionChosenFromList })
   }
 
   render() {
