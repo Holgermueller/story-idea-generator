@@ -1,5 +1,11 @@
 import React, { Component } from "react"
-import { Card, CardContent, CardActions, Button } from "@material-ui/core"
+import {
+  Card,
+  CardContent,
+  CardActions,
+  CardHeader,
+  Button,
+} from "@material-ui/core"
 
 export default class ProtagDisplay extends Component {
   constructor(props) {
@@ -29,6 +35,7 @@ export default class ProtagDisplay extends Component {
   render() {
     return (
       <Card>
+        <CardHeader title="Protgonist" />
         <CardContent>
           {this.state.chosenProtag ? (
             <h1
@@ -39,7 +46,7 @@ export default class ProtagDisplay extends Component {
               {this.state.chosenProtag}
             </h1>
           ) : (
-            <h1>Protagonist</h1>
+            <h1 style={{ textAlign: "center" }}>Protagonist</h1>
           )}
         </CardContent>
         <CardActions>

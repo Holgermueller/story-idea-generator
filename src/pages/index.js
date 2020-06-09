@@ -32,14 +32,39 @@ const IndexPage = () => (
         justify="center"
         alignItems="center"
         alignContent="center"
+        spacing={2}
       >
-        <Grid item style={{ marginLeft: "auto", marginRight: "auto" }}>
+        <Grid
+          item
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+          xs={12}
+          sm={4}
+          md={4}
+          lg={4}
+          xl={4}
+        >
           <ProtagDisplay />
         </Grid>
-        <Grid item style={{ marginLeft: "auto", marginRight: "auto" }}>
+        <Grid
+          item
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+          xs={12}
+          sm={4}
+          md={4}
+          lg={4}
+          xl={4}
+        >
           <ActionDisplay />
         </Grid>
-        <Grid item style={{ marginLeft: "auto", marginRight: "auto" }}>
+        <Grid
+          item
+          style={{ marginLeft: "auto", marginRight: "auto" }}
+          xs={12}
+          sm={4}
+          md={4}
+          lg={4}
+          xl={4}
+        >
           <RandomWordDisplay />
         </Grid>
       </Grid>

@@ -1,5 +1,11 @@
 import React, { Component } from "react"
-import { Card, CardContent, CardActions, Button } from "@material-ui/core"
+import {
+  Card,
+  CardContent,
+  CardActions,
+  CardHeader,
+  Button,
+} from "@material-ui/core"
 
 export default class ActionDisplay extends Component {
   constructor(props) {
@@ -22,6 +28,7 @@ export default class ActionDisplay extends Component {
   render() {
     return (
       <Card>
+        <CardHeader title="Action" />
         <CardContent>
           {this.state.chosenAction ? (
             <h1
