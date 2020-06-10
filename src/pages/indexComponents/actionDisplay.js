@@ -28,7 +28,7 @@ export default class ActionDisplay extends Component {
   render() {
     return (
       <Card>
-        <CardHeader title="Action" />
+        <CardHeader style={{ background: `#66fcf1` }} title="Action" />
         <CardContent>
           {this.state.chosenAction ? (
             <h1

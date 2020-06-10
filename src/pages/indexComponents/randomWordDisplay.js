@@ -28,7 +28,7 @@ export default class RandomWordDisplay extends Component {
   render() {
     return (
       <Card>
-        <CardHeader title="Random Word" />
+        <CardHeader style={{ background: `#66fcf1` }} title="Random Word" />
         <CardContent>
           {this.state.chosenRandomWord ? (
             <h1

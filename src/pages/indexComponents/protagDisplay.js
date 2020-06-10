@@ -13,12 +13,24 @@ export default class ProtagDisplay extends Component {
 
     this.state = {
       protagList: [
-        "Wizard",
+        "Magician",
         "Professor",
         "Farmer",
         "Student",
         "Surfer",
         "Shaman",
+        "Jester",
+        "Orphan",
+        "Explorer",
+        "Creator",
+        "Lover",
+        "Ruler",
+        "Caregiver",
+        "Warrior",
+        "Child",
+        "Rebel",
+        "Seducer",
+        "Thief",
       ],
       chosenProtag: "",
     }
@@ -35,7 +47,7 @@ export default class ProtagDisplay extends Component {
   render() {
     return (
       <Card>
-        <CardHeader title="Protgonist" />
+        <CardHeader style={{ background: `#66fcf1` }} title="Protgonist" />
         <CardContent>
           {this.state.chosenProtag ? (
             <h1
