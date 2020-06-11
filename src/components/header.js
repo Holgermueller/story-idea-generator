@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Typography, Box } from "@material-ui/core"
+import { GiBookStorm } from "react-icons/gi"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -31,6 +32,7 @@ const Header = ({ siteTitle }) => (
                 fontStyle: `oblique`,
               }}
             >
+              <GiBookStorm />
               {siteTitle}
             </Link>
           </div>

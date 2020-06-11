@@ -45,7 +45,7 @@ export default class ActionDisplay extends Component {
         <CardHeader
           style={{ background: `#66fcf1` }}
           avatar={
-            <Avatar style={{ backgroundColor: `black` }}>
+            <Avatar style={{ backgroundColor: `#45a29e`, color: `black` }}>
               <FaRunning />
             </Avatar>
           }
@@ -75,8 +75,8 @@ export default class ActionDisplay extends Component {
             style={{ marginLeft: "auto", marginRight: "auto" }}
             aria-label="choose an action"
             size="large"
-            color="primary"
             onClick={this.handleClick}
+            variant="outlined"
           >
             <FaRunning />
             Choose

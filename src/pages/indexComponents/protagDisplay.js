@@ -39,7 +39,7 @@ export default class ProtagDisplay extends Component {
     }
   }
 
-  hanndleClick = () => {
+  handleClick = () => {
     let protagChosenFromList = this.state.protagList[
       Math.floor(Math.random() * this.state.protagList.length)
     ]
@@ -53,7 +53,7 @@ export default class ProtagDisplay extends Component {
         <CardHeader
           style={{ background: `#66fcf1` }}
           avatar={
-            <Avatar style={{ backgroundColor: `black` }}>
+            <Avatar style={{ backgroundColor: `#45a29e`, color: `black` }}>
               <IoMdPerson />
             </Avatar>
           }
@@ -77,8 +77,8 @@ export default class ProtagDisplay extends Component {
             style={{ marginLeft: "auto", marginRight: "auto" }}
             aria-label="choose a protagonist"
             size="large"
-            color="primary"
-            onClick={this.hanndleClick}
+            onClick={this.handleClick}
+            variant="outlined"
           >
             <IoMdPerson />
             Choose

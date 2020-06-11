@@ -44,7 +44,7 @@ export default class RandomWordDisplay extends Component {
         <CardHeader
           style={{ background: `#66fcf1` }}
           avatar={
-            <Avatar style={{ backgroundColor: `black` }}>
+            <Avatar style={{ backgroundColor: `#45a29e`, color: `black` }}>
               <FaQuestionCircle />
             </Avatar>
           }
@@ -74,8 +74,8 @@ export default class RandomWordDisplay extends Component {
             style={{ marginLeft: "auto", marginRight: "auto" }}
             aria-label="choose a random word"
             size="large"
-            color="primary"
             onClick={this.handleClick}
+            variant="outlined"
           >
             <FaQuestionCircle />
             Choose
