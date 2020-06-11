@@ -38,7 +38,13 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main
+          style={{
+            backgroundImage: `url('../images/notebook-with-blank-pages-942872.png')`,
+          }}
+        >
+          {children}
+        </main>
 
         <footer style={{ fontFamily: `sans-serif`, marginTop: `15px` }}>
           © {new Date().getFullYear()} | Holger Mueller | Built with

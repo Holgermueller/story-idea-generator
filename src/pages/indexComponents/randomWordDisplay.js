@@ -5,7 +5,9 @@ import {
   CardActions,
   CardHeader,
   Button,
+  Avatar,
 } from "@material-ui/core"
+import { FaQuestionCircle } from "react-icons/fa"
 
 export default class RandomWordDisplay extends Component {
   constructor(props) {
@@ -39,7 +41,15 @@ export default class RandomWordDisplay extends Component {
   render() {
     return (
       <Card>
-        <CardHeader style={{ background: `#66fcf1` }} title="Random Word" />
+        <CardHeader
+          style={{ background: `#66fcf1` }}
+          avatar={
+            <Avatar style={{ backgroundColor: `black` }}>
+              <FaQuestionCircle />
+            </Avatar>
+          }
+          title="Random Word"
+        />
         <CardContent>
           {this.state.chosenRandomWord ? (
             <h1
@@ -67,6 +77,7 @@ export default class RandomWordDisplay extends Component {
             color="primary"
             onClick={this.handleClick}
           >
+            <FaQuestionCircle />
             Choose
           </Button>
         </CardActions>

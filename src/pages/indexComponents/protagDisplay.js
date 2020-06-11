@@ -5,7 +5,9 @@ import {
   CardActions,
   CardHeader,
   Button,
+  Avatar,
 } from "@material-ui/core"
+import { IoMdPerson } from "react-icons/io"
 
 export default class ProtagDisplay extends Component {
   constructor(props) {
@@ -48,7 +50,15 @@ export default class ProtagDisplay extends Component {
   render() {
     return (
       <Card>
-        <CardHeader style={{ background: `#66fcf1` }} title="Protgonist" />
+        <CardHeader
+          style={{ background: `#66fcf1` }}
+          avatar={
+            <Avatar style={{ backgroundColor: `black` }}>
+              <IoMdPerson />
+            </Avatar>
+          }
+          title="Protgonist"
+        />
         <CardContent>
           {this.state.chosenProtag ? (
             <h1
@@ -70,6 +80,7 @@ export default class ProtagDisplay extends Component {
             color="primary"
             onClick={this.hanndleClick}
           >
+            <IoMdPerson />
             Choose
           </Button>
         </CardActions>

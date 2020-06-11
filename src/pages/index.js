@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { AiOutlineArrowRight } from "react-icons/ai"
+import { IoIosArrowForward } from "react-icons/io"
 import { Link } from "gatsby"
 import { Grid } from "@material-ui/core"
 import ProtagDisplay from "./indexComponents/protagDisplay"
@@ -19,7 +19,7 @@ const IndexPage = () => (
       aria-label="Find out how this app works"
     >
       <h3 style={{ fontFamily: `sans-serif` }}>
-        How it works <AiOutlineArrowRight />
+        How it works <IoIosArrowForward />
       </h3>
     </Link>
 

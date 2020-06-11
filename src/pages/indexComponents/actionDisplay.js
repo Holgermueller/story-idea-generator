@@ -5,7 +5,9 @@ import {
   CardActions,
   CardHeader,
   Button,
+  Avatar,
 } from "@material-ui/core"
+import { FaRunning } from "react-icons/fa"
 
 export default class ActionDisplay extends Component {
   constructor(props) {
@@ -40,7 +42,15 @@ export default class ActionDisplay extends Component {
   render() {
     return (
       <Card>
-        <CardHeader style={{ background: `#66fcf1` }} title="Action" />
+        <CardHeader
+          style={{ background: `#66fcf1` }}
+          avatar={
+            <Avatar style={{ backgroundColor: `black` }}>
+              <FaRunning />
+            </Avatar>
+          }
+          title="Action"
+        />
         <CardContent>
           {this.state.chosenAction ? (
             <h1
@@ -68,6 +78,7 @@ export default class ActionDisplay extends Component {
             color="primary"
             onClick={this.handleClick}
           >
+            <FaRunning />
             Choose
           </Button>
         </CardActions>
