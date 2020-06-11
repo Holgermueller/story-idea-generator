@@ -31,6 +31,7 @@ export default class ProtagDisplay extends Component {
         "Rebel",
         "Seducer",
         "Thief",
+        "Troubadour",
       ],
       chosenProtag: "",
     }

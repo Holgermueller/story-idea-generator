@@ -12,7 +12,18 @@ export default class RandomWordDisplay extends Component {
     super(props)
 
     this.state = {
-      randomWordList: ["cheese", "princess", "ocean"],
+      randomWordList: [
+        "cheese",
+        "royal",
+        "ocean",
+        "world",
+        "kingdom",
+        "monster",
+        "animal",
+        "farm",
+        "town",
+        "relative",
+      ],
       chosenRandomWord: "",
     }
   }

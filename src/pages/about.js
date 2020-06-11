@@ -20,19 +20,8 @@ const AboutPage = () => (
       }}
     >
       <div>
-        <p style={{ padding: `8px` }}>
-          MeanStreak began with a man and a dream.
-        </p>
-        <p style={{ padding: `8px` }}>
-          Well not a dream per se. It was more like a man whose job involved a
-          lot of mindless tasks. While performing these mindless tasks, he
-          daydreamed, and these are some of the thoughts that ran through his
-          head. They ran through his head non-stop that he needed to find a way
-          to get them out. Once they were out, he got sick of looking at them by
-          himself. If he had to suffer, that didn't mean he had to suffer alone.
-          Misery loves company, as they say. And so, here is MeanStreak, for no
-          one's pleasure.
-        </p>
+        <p style={{ padding: `8px` }}></p>
+        <p style={{ padding: `8px` }}></p>
       </div>
     </div>
   </Layout>

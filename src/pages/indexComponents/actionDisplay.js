@@ -12,7 +12,19 @@ export default class ActionDisplay extends Component {
     super(props)
 
     this.state = {
-      actionList: ["saves", "destroys", "eats"],
+      actionList: [
+        "saves",
+        "destroys",
+        "eats",
+        "discovers",
+        "learns",
+        "marries",
+        "defeats",
+        "achieves",
+        "loses",
+        "restores",
+        "fixes",
+      ],
       chosenAction: "",
     }
   }
