@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import Connect from "./connect"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -57,7 +56,6 @@ const Layout = ({ children }) => {
           </a>
         </footer>
       </div>
-      <Connect />
     </>
   )
 }
